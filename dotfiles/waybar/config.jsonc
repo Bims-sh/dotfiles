@@ -1,0 +1,86 @@
+{
+  "layer": "top",
+  "position": "top",
+  "gtk-layer-shell": true,
+  "height": 35,
+
+  "modules-left": ["wlr/workspaces", "hyprland/window", "custom/player"],
+  "modules-center": ["clock"],
+  "modules-right": [
+    "tray",
+    "network",
+    "cpu",
+    "memory",
+    "backlight",
+    "pulseaudio",
+    "battery"
+  ],
+
+  "wlr/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "on-click": "activate"
+  },
+  "hyprland/window": {
+    "format": "{}"
+  },
+  "tray": {
+    "icon-size": 13,
+    "spacing": 20
+  },
+  "backlight": {
+    "device": "amdgpu_bl1",
+    "format": "{icon} {percent}",
+    "format-icons": ["✸", "✹", "✺", "❄️"],
+    "on-scroll-down": "brightnessctl set 1%+",
+    "on-scroll-up": "brightnessctl set 1%-",
+    "min-length": 5
+  },
+  "cpu": {
+    "format": " {usage}",
+    "tooltip": true,
+    "on-click": "alacritty -t btop -e btop"
+  },
+  "memory": {
+    "format": "{} 🏔️"
+  },
+  "battery": {
+    "states": {
+      "good": 95,
+      "warning": 20,
+      "critical": 10
+    },
+    "format": "{icon}  {capacity}",
+    "format-charging": "⚡ {capacity}",
+    "format-plugged": "⚡ {capacity}",
+    "format-alt": "{time} {icon}",
+    "format-icons": ["", "", "", "", ""]
+  },
+  "clock": {
+    "format": "{:%R}",
+    "on-click": "alacritty -t clock -e tty-clock -sb -C 4 & sleep 1.5 && pkill clock"
+  },
+  "network": {
+    "format-wifi": " {essid} ",
+    "format-ethernet": " {essid}",
+    "format-linked": "{ifname} (No IP) ",
+    "format-disconnected": "! Disconnected",
+    "tooltip-format-wifi": "{signalStrength}% | ⬇ {bandwidthDownBits} ⬆ {bandwidthUpBits} | {ipaddr}/{cidr}",
+    "on-click": "alacritty -t nmtui -e nmtui"
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}",
+    "format-muted": "🔕 Quiet",
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "scroll-step": 1,
+    "format-icons": {
+      "headphone": "🎧",
+      "hands-free": "🎧",
+      "headset": "🎧",
+      "phone": "📞",
+      "portable": "📞",
+      "car": "",
+      "default": ["♪", "♪", "♪"]
+    }
+  }
+}
