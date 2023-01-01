@@ -1,5 +1,7 @@
 # dotfiles
 
+![](https://komarev.com/ghpvc/?username=dasischbims-dotfiles&color=blue)
+
 ### Hey there 👋, I'm currently using all of these things:
 - Distro: [arch btw](https://archlinux.org/)
 - Terminal: [alacritty](https://github.com/alacritty/alacritty/)
