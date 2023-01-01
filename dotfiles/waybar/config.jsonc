@@ -42,7 +42,7 @@
     "on-click": "alacritty -t btop -e btop"
   },
   "memory": {
-    "format": "{} 🏔️"
+    "format": "{} "
   },
   "battery": {
     "states": {
