@@ -1,6 +1,6 @@
 # dotfiles
 
-![](https://komarev.com/ghpvc/?username=dasischbims-dotfiles&color=blue)
+![](https://komarev.com/ghpvc/?username=dasischbims-dotfiles&color=blue&label=Views&style=for-the-badge)
 
 ### Hey there 👋, I'm currently using all of these things:
 - Distro: [arch btw](https://archlinux.org/)
