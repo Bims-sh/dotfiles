@@ -457,18 +457,24 @@
 #
 # My Stuff
 [global]
-frame_color = "#7287fd"
-separator_color= "#aecfff"
+frame_color = "#7287FD"
+separator_color= "#AECFFF"
+timeout = 0
 
 [urgency_low]
 background = "#272727D9"
-foreground = "#7287fd"
+foreground = "#7287FD"
+frame_color = "#424242"
+timeout = 5
 
 [urgency_normal]
 background = "#272727D9"
-foreground = "#7287fd"
+foreground = "#7287FD"
+frame_color = "#7287FD"
+timeout = 10
 
 [urgency_critical]
 background = "#272727D9"
-foreground = "#7287fd"
-frame_color = "#7287fd"
+foreground = "#FF1744"
+frame_color = "#FF1744"
+timeout = 15
