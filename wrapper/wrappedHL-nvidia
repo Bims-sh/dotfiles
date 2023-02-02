@@ -1,0 +1,31 @@
+#!/bin/bash
+
+cd ~
+
+export _JAVA_AWT_WM_NONREPARENTING=1
+export XCURSOR_SIZE=24
+
+# Nvidia shenanigans (nvidia-dkms)
+export LIBVA_DRIVER_NAME=nvidia
+export XDG_SESSION_TYPE=wayland
+export __GLX_VENDOR_LIBRARY_NAME=nvidia
+export WLR_NO_HARDWARE_CURSORS=1
+# this is commented out because i use hyprland-nvidia-git
+# export GBM_BACKEND=nvidia-drm
+
+# Other
+export GTK_THEME=Adwaita:dark
+
+# Stolen from someone but it works, don't touch
+# Might wanna change the card1-HDMI-A-1 to whatever your external monitor is
+# You should also add more variables to the if statement if you have more than one external monitor
+external=${cat /sys/class/drm/card1-HDMI-A-1/status}
+
+if [ "$external" = 'disconnected' ]; then
+	export LAPTOP=1
+	exec Hyprland
+else
+	export LAPTOP=0
+	export WLR_DRM_DEVICES=/dev/dri/card1
+	exec Hyprland
+fi
