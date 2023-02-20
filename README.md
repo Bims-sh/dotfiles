@@ -10,6 +10,7 @@
 - Notifications: [dunst](https://github.com/dunst-project/dunst/)
 - Audio: [pipewire](https://pipewire.org/)
 - Display/Login Manager: [ly](https://github.com/fairyglade/ly/)
+And more...
 
 ## Preview of my current setup
 ![](https://raw.githubusercontent.com/DasIschBims/dotfiles/master/images/showcase.png)
