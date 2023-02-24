@@ -1,0 +1,9 @@
+### Hey there 👋, the freezing mountains rice uses these:
+- Distro: [arch btw](https://archlinux.org/)
+
+And more...
+
+> This is heavily WIP rn...
+
+## Preview of freezing mountains
+soon...
