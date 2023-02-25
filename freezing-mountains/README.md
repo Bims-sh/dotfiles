@@ -10,4 +10,4 @@
 And more...
 
 ## Preview of freezing mountains
-![](https://raw.githubusercontent.com/DasIschBims/dotfiles/master/images/showcase.png)
+![](https://raw.githubusercontent.com/DasIschBims/dotfiles/master/freezing-mountains/images/showcase.png)
