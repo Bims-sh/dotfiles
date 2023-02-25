@@ -10,9 +10,10 @@
   ],
   "modules-right": [
     "tray",
-    "battery",
+    "pulseaudio",
     "backlight",
     "network",
+    "battery",
     "clock"
   ],
   "custom/arch": {
@@ -25,13 +26,13 @@
     "all-outputs": true
   },
   "clock": {
-    "format": "<span color='#dc8891'> </span>{:%H:%M}",
-    "format-alt": "<span foreground='#dc8891'> </span><span>{:%I:%M %p %a %d}</span>",
+    "format": "<span color='#dc8891' font='15'></span> <span rise='2000'>{:%H:%M}</span>",
+    "format-alt": "<span foreground='#dc8891' font='15'></span> <span rise='2000'>{:%I:%M %p %a %d}</span>",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
   "backlight": {
     "device": "amdgpu_b10",
-    "format": "<span color='#dc8891' font='15'>{icon}</span> <span rise='3200'>{percent}%</span>",
+    "format": "<span color='#dc8891' font='15'>{icon}</span> <span rise='2000'>{percent}%</span>",
     "format-icons": [
       "",
       "",
@@ -44,21 +45,17 @@
       ""
     ]
   },
-  "custom/sound": {
-    "format": "<span color='#dc8891'> </span>{}",
-    "exec": "custom-alsa.sh"
-  },
   "network": {
     "format": "{ifname}",
-    "format-wifi": "<span color='#dc8891' font='15'> </span><span rise='3200'>{essid}</span>",
+    "format-wifi": "<span color='#dc8891' font='15'> </span><span rise='2000'>{essid}</span>",
     "format-ethernet": "{ipaddr}/{cidr} ",
     "format-disconnected": "<span color='#dc8891' font='15'>󰖪 </span>No Network",
     "tooltip-format-wifi": "{signalStrength}% | <span font='15'>⬇</span> {bandwidthDownBits} <span font='15'>⬆</span> {bandwidthUpBits} | {ipaddr}/{cidr}",
     "on-click": "alacritty -t nmtui -e nmtui"
   },
   "battery": {
-    "format": "<span color='#dc8891' font='18'>{icon}</span>",
-    "format-alt": "{capacity}%",
+    "format": "<span color='#dc8891' font='15'>{icon}</span> <span rise='2000'>{capacity}%</span>",
+    "format-alt": "<span foreground='#dc8891' font='15'></span> <span rise='2000'>{time}</span>",
     "format-icons": [
       "",
       "",
@@ -68,13 +65,14 @@
       "",
       ""
     ],
-    "format-charging": "<span color='#dc8891' font='18'></span>",
-    "format-charging-alt": "{capacity}%"
+    "format-charging": "<span color='#dc8891' font='15'>󰚥</span> <span>{time}</span>",
+    "format-plugged": "<span color='#dc8891' font='15'>󰚥</span>"
   },
   "pulseaudio": {
-    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-    "format": "<span color='#dc8891'></span> {volume}%",
-    "format-muted": "<span color='#dc8891'>ﱝ</span>",
+    "on-click": "/bin/bash ~/.config/dunst/volume mute",
+    "scroll-step": 5,
+    "format": "<span color='#dc8891' font='15'></span> <span rise='2000'>{volume}%</span>",
+    "format-muted": "<span color='#dc8891' font='15'>ﱝ</span>",
     "format-icons": {
       "headphone": "",
       "hands-free": "",
