@@ -26,13 +26,13 @@
     "all-outputs": true
   },
   "clock": {
-    "format": "<span color='#dc8891' font='15'></span> <span rise='2000'>{:%H:%M}</span>",
-    "format-alt": "<span foreground='#dc8891' font='15'></span> <span rise='2000'>{:%I:%M %p %a %d}</span>",
+    "format": "<span color='#aecfff' font='15'></span> <span rise='2000'>{:%H:%M}</span>",
+    "format-alt": "<span foreground='#aecfff' font='15'></span> <span rise='2000'>{:%I:%M %p %a %d}</span>",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
   "backlight": {
     "device": "amdgpu_b10",
-    "format": "<span color='#dc8891' font='15'>{icon}</span> <span rise='2000'>{percent}%</span>",
+    "format": "<span color='#aecfff' font='15'>{icon}</span> <span rise='2000'>{percent}%</span>",
     "format-icons": [
       "",
       "",
@@ -47,15 +47,15 @@
   },
   "network": {
     "format": "{ifname}",
-    "format-wifi": "<span color='#dc8891' font='15'> </span><span rise='2000'>{essid}</span>",
+    "format-wifi": "<span color='#aecfff' font='15'> </span><span rise='2000'>{essid}</span>",
     "format-ethernet": "{ipaddr}/{cidr} ",
-    "format-disconnected": "<span color='#dc8891' font='15'>󰖪 </span>No Network",
+    "format-disconnected": "<span color='#aecfff' font='15'>󰖪 </span>No Network",
     "tooltip-format-wifi": "{signalStrength}% | <span font='15'>⬇</span> {bandwidthDownBits} <span font='15'>⬆</span> {bandwidthUpBits} | {ipaddr}/{cidr}",
     "on-click": "alacritty -t nmtui -e nmtui"
   },
   "battery": {
-    "format": "<span color='#dc8891' font='15'>{icon}</span> <span rise='2000'>{capacity}%</span>",
-    "format-alt": "<span foreground='#dc8891' font='15'></span> <span rise='2000'>{time}</span>",
+    "format": "<span color='#aecfff' font='15'>{icon}</span> <span rise='2000'>{capacity}%</span>",
+    "format-alt": "<span foreground='#aecfff' font='15'></span> <span rise='2000'>{time}</span>",
     "format-icons": [
       "",
       "",
@@ -65,14 +65,14 @@
       "",
       ""
     ],
-    "format-charging": "<span color='#dc8891' font='15'>󰚥</span> <span>{time}</span>",
-    "format-plugged": "<span color='#dc8891' font='15'>󰚥</span>"
+    "format-charging": "<span color='#aecfff' font='15'>󰚥</span> <span rise='2000'>{capacity}%</span>",
+    "format-plugged": "<span color='#aecfff' font='15'>󰚥</span>"
   },
   "pulseaudio": {
     "on-click": "/bin/bash ~/.config/dunst/volume mute",
     "scroll-step": 5,
-    "format": "<span color='#dc8891' font='15'></span> <span rise='2000'>{volume}%</span>",
-    "format-muted": "<span color='#dc8891' font='15'>ﱝ</span>",
+    "format": "<span color='#aecfff' font='15'></span> <span rise='2000'>{volume}%</span>",
+    "format-muted": "<span color='#aecfff' font='15'>ﱝ</span>",
     "format-icons": {
       "headphone": "",
       "hands-free": "",
@@ -88,7 +88,7 @@
     "on-click-right": "pavucontrol"
   },
   "memory": {
-    "format": "<span foreground='#dc8891'></span> {}%",
+    "format": "<span foreground='#aecfff'></span> {}%",
     "on-click": "kitty htop"
   },
   "tray": {
@@ -97,11 +97,11 @@
     "spacing": 6
   },
   "cpu": {
-    "format": "<span foreground='#dc8891'></span>  {usage}%"
+    "format": "<span foreground='#aecfff'></span>  {usage}%"
   },
   "temperature": {
     "critical-threshold": 80,
-    "format": "<span foreground='#dc8891'></span> {temperatureC}°C"
+    "format": "<span foreground='#aecfff'></span> {temperatureC}°C"
   },
   "custom/playerctl": {
     "format": "{icon}  <span>{}</span>",
@@ -112,8 +112,8 @@
     "on-click": "playerctl play-pause",
     "on-click-right": "playerctl next",
     "format-icons": {
-      "Paused": "<span foreground='#dc8891'></span>",
-      "Playing": "<span foreground='#dc8891'></span>"
+      "Paused": "<span foreground='#aecfff'></span>",
+      "Playing": "<span foreground='#aecfff'></span>"
     }
   }
 }
