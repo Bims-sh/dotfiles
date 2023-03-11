@@ -1,0 +1,9 @@
+(defpoll hour :interval "1s" `date +%H`)
+(defpoll minute :interval "1m" `date +%M`)
+(defpoll day :interval "1h" `date "+%A"`)
+(defpoll year :interval "1h" `date "+%Y"`)
+(defpoll month :interval "1h" `date "+%B"`)
+(defpoll date :interval "2h" `date "+%d"`)
+(defpoll thourtime :interval "1s" `date +"%I:%M %p %a"`)
+(defpoll datemonth :interval "24h"
+	"date '+%A, %d %B'")

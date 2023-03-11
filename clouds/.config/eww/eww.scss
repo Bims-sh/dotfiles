@@ -1,6 +1,4 @@
-* {
-  all: unset;
-}
+@import "./src/scss/vars";
+@import "./src/scss/main";
 
-@import "colors.scss";
-@import "widgets/powermenu.scss";
+@import "./src/scss/power/index";

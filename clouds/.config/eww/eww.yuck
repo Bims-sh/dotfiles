@@ -1,1 +1,5 @@
-(include "./widgets/powermenu.yuck")
+(include "./src/yuck/_vars.yuck")
+(include "./src/yuck/_modules.yuck")
+
+(include "./src/yuck/power/_widgets.yuck")
+(include "./src/yuck/power/_window.yuck")
