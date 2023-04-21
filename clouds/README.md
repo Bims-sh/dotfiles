@@ -4,10 +4,13 @@
 - Terminal: [alacritty](https://github.com/alacritty/alacritty/)
 - Compositor: [hyprland](https://hyprland.org/)
 - Bar: [waybar](https://aur.archlinux.org/packages/waybar-hyprland-git/)
-- Notifications: [dunst](https://github.com/dunst-project/dunst/)
-- Audio: [pipewire](https://pipewire.org/)
+- Notifications: [mako](https://github.com/emersion/mako)
+- Audio: [pulseaudio](https://www.freedesktop.org/wiki/Software/PulseAudio/)
 - Display/Login Manager: [ly](https://github.com/fairyglade/ly/)
 - Widgets: [eww](https://github.com/elkowar/eww)
+- Lockscreen: [swaylock-effects](https://github.com/mortie/swaylock-effects)
+- Logout: [wlogout](https://github.com/ArtsyMacaw/wlogout)
+- Wallpaper: [hyprpaper](https://github.com/hyprwm/hyprpaper)
 
 And more...
 

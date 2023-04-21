@@ -1,0 +1,32 @@
+margin=8,0,2,0
+border-size=2
+text-alignment=center
+width=275
+height=95
+format=%s\n%b
+layer=overlay
+border-radius=8
+font=Clear Sans 10.5
+default-timeout=4500
+icon-path=/usr/share/icons/Adwaita:/usr/share/icons/elementary
+max-icon-size=36
+anchor=top-center
+group-by=summary
+
+[urgency=normal]
+background-color=#1e1e2e
+text-color=#b4b5b6
+border-color=#dc8891aa
+
+[urgency=critical]
+background-color=#1e1e2e
+text-color=#b3b5b6
+border-color=#dc8891aa
+default-timeout=0
+format=<b>%s</b>\n%b
+
+[urgency=low]
+on-notify=exec exit
+background-color=#1e1e2e
+text-color=#b4b5b6
+border-color=#dc8891aa

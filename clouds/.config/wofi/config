@@ -1,8 +1,8 @@
-width=500
-height=500
+width=600
+height=350
 location=center
 show=drun
-prompt=Apps
+prompt=Search...
 filter_rate=100
 allow_markup=true
 no_actions=true
@@ -12,4 +12,4 @@ content_halign=fill
 insensitive=true
 allow_images=true
 image_size=40
-sort_order=alphabetical
+gtk_dark=true
