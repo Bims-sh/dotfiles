@@ -133,13 +133,14 @@ tooltip {
 
 #battery {
   color: #a6e3a1;
-  border-radius: 0 10px 10px 0;
-  margin-right: 10px;
-  border-left: 0px;
+  margin-right: 0px;
+  border-left: none;
+  border-right: none;
 }
 
 #custom-weather {
   border-radius: 0px 10px 10px 0px;
   border-right: 0px;
+  border-left: none;
   margin-left: 0px;
 }
